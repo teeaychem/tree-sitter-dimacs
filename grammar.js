@@ -19,8 +19,5 @@ module.exports = grammar({
 
         clause: $ => seq(repeat($.literal), '0'),
 
-
-
-
   }
 });
