@@ -15,9 +15,13 @@ module.exports = grammar({
 
         comment: $ => seq('c', /[^\n]*/),
 
-        problem: $ => seq('p', 'cnf', $.variable, $.variable),
-
         clause: $ => seq(repeat($.literal), '0'),
+
+        variables: $ => /[1-9][0-9]*/,
+
+        clauses: $ => /[1-9][0-9]*/,
+
+        problem: $ => seq('p', 'cnf', $.variables, $.clauses),
 
   }
 });

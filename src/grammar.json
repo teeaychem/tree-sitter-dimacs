@@ -63,27 +63,6 @@
         }
       ]
     },
-    "problem": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "p"
-        },
-        {
-          "type": "STRING",
-          "value": "cnf"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "variable"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "variable"
-        }
-      ]
-    },
     "clause": {
       "type": "SEQ",
       "members": [
@@ -97,6 +76,35 @@
         {
           "type": "STRING",
           "value": "0"
+        }
+      ]
+    },
+    "variables": {
+      "type": "PATTERN",
+      "value": "[1-9][0-9]*"
+    },
+    "clauses": {
+      "type": "PATTERN",
+      "value": "[1-9][0-9]*"
+    },
+    "problem": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "p"
+        },
+        {
+          "type": "STRING",
+          "value": "cnf"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "variables"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "clauses"
         }
       ]
     }

@@ -15,6 +15,11 @@
     }
   },
   {
+    "type": "clauses",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "comment",
     "named": true,
     "fields": {}
@@ -47,7 +52,11 @@
       "required": true,
       "types": [
         {
-          "type": "variable",
+          "type": "clauses",
+          "named": true
+        },
+        {
+          "type": "variables",
           "named": true
         }
       ]
@@ -77,6 +86,16 @@
     }
   },
   {
+    "type": "variable",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "variables",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "0",
     "named": false
   },
@@ -95,9 +114,5 @@
   {
     "type": "p",
     "named": false
-  },
-  {
-    "type": "variable",
-    "named": true
   }
 ]
